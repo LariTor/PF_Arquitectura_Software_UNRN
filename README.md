@@ -48,10 +48,10 @@ Este proyecto es el trabajo final integrador de la materia "Arquitectura de Soft
 </details>
 
 <details>
-<summary><b> Tecnologías Utilizadas</b></summary>
+<summary><b> Herramientas Utilizadas</b></summary>
 
 * Lenguajes de Programación: [C++](https://cplusplus.com/)
-* Hardware: Display, Buzzer
-* Comunicación: USB
-* Herramientas y Frameworks: [Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode#:~:text=At%20its%20heart%2C%20Visual%20Studio,selection%2C%20snippets%2C%20and%20more.), [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)
+* Control de versiones: [Git](https://git-scm.com/) a través de [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)
+* Entorno de desarrollo: [Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode#:~:text=At%20its%20heart%2C%20Visual%20Studio,selection%2C%20snippets%2C%20and%20more.), [QT](https://www.qt.io/)
+* Modelado de Software: 
 </details>
