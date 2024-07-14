@@ -1,5 +1,5 @@
 
-![LogoUnrn](logounrn.png)
+![LogoUnrn](docs/logounrn.png)
 
 ## Proyecto Final Arquitectura de Software: Sistema de Visualización y Alerta de Datos Mediante USB
 
