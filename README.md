@@ -41,7 +41,7 @@ Este proyecto es el trabajo final integrador de la materia "Arquitectura de Soft
 <summary><b>Características del proyecto</b></summary>
 
 * Extracción de Datos: Obtención de datos a partir de muestras específicas.
-* Visualización: Muestra de los datos en un display conectado vía USB.
+* Visualización: Muestra de los datos en un display conectado vía USB.https://naylampmechatronics.com/blog/35_tutorial-lcd-con-i2c-controla-un-lcd-con-solo-dos-pines.html
 * Alerta Sonora: Activación de un buzzer como alerta basada en los datos procesados.
 * Conexión USB: Comunicación y transferencia de datos mediante conexión USB.
   
