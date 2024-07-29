@@ -1,1 +1,1 @@
-#? [State Pattern](https://refactoring.guru/design-patterns/state)
+# [State Pattern](https://refactoring.guru/design-patterns/state)

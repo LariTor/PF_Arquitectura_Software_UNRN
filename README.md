@@ -53,5 +53,5 @@ Este proyecto es el trabajo final integrador de la materia "Arquitectura de Soft
 * Lenguajes de Programación: [C++](https://cplusplus.com/)
 * Control de versiones: [Git](https://git-scm.com/) a través de [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)
 * Entorno de desarrollo: [Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode#:~:text=At%20its%20heart%2C%20Visual%20Studio,selection%2C%20snippets%2C%20and%20more.), [QT](https://www.qt.io/)
-* Modelado de Software: 
+* Librería para conexión I2C: [Liquid Crystal I2C](https://github.com/johnrickman/LiquidCrystal_I2C/tree/master)
 </details>
