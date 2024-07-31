@@ -1,0 +1,5 @@
+<map id="InitState" name="InitState">
+<area shape="rect" id="Node000001" title="Clase que representa el estado de inicialización del sistema." alt="" coords="5,81,82,109"/>
+<area shape="rect" id="Node000002" href="$classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="16,5,71,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,49,46,81,41,81,41,49"/>
+</map>

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Final Arquitectura de Software: Archivo de código fuente sketch/menu_state.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logounrn.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Final Arquitectura de Software<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de Visualización y Alerta de Datos Mediante USB</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e80fe89702e8e9e35bb1f7e9386fe61f.html">sketch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">menu_state.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="menu__state_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef MENU_STATE_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define MENU_STATE_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;LiquidCrystal_I2C.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classMenuState.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classMenuState.html">MenuState</a> : <span class="keyword">public</span> <a class="code hl_class" href="classState.html">State</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classMenuState.html#a223dad1767008ab8d83dbfed73649253">   34</a></span>    <a class="code hl_function" href="classMenuState.html#a223dad1767008ab8d83dbfed73649253">MenuState</a>(LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classMenuState.html#a9dc27d30543f5e7f154d5e18382d2095">lcd</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classMenuState.html#ab20aef5a61c5277aff1cd56351709c0a">   41</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuState.html#ab20aef5a61c5277aff1cd56351709c0a">handleUp</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classMenuState.html#a9e8b2dce8f9145fcc3e2d53fd41947d8">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuState.html#a9e8b2dce8f9145fcc3e2d53fd41947d8">handleDown</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classMenuState.html#a09a4a054c95734f2de7f5d6081e8cb0d">   55</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuState.html#a09a4a054c95734f2de7f5d6081e8cb0d">handleSelect</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classMenuState.html#a484e45ba5fad0fc509f15c363f443183">   62</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuState.html#a484e45ba5fad0fc509f15c363f443183">handleBack</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classMenuState.html#aa7afcf3ffb9eb0a44440f55a8472e9b2">   69</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuState.html#aa7afcf3ffb9eb0a44440f55a8472e9b2">displayMenu</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classMenuState.html#a3df1108ce455147994a1113aabd54f79">   72</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classMenuState.html#a3df1108ce455147994a1113aabd54f79">currentIndex</a>;       </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classMenuState.html#a9dc27d30543f5e7f154d5e18382d2095">   73</a></span>    LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classMenuState.html#a9dc27d30543f5e7f154d5e18382d2095">lcd</a>; </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classMenuState.html#a65a38d7dd6ae0e6346c62cb06e56da07">   78</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuState.html#a65a38d7dd6ae0e6346c62cb06e56da07">initializeLcd</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classMenuState.html#ac6494f1c5373a8293fc7942642b8b1f4">   83</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuState.html#ac6494f1c5373a8293fc7942642b8b1f4">printLogo</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classMenuState.html#a2f363f761d59386266e47167c95a2f73">   84</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="classMenuState.html#a2f363f761d59386266e47167c95a2f73">menuItems</a>[]; </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classMenuState.html#a762ea104392179d78583b92e5c80d95d">   85</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classMenuState.html#a762ea104392179d78583b92e5c80d95d">menuLength</a>;    </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif </span><span class="comment">// MENU_STATE_H</span></div>
+<div class="ttc" id="aclassContext_html"><div class="ttname"><a href="classContext.html">Context</a></div><div class="ttdef"><b>Definition</b> context.h:24</div></div>
+<div class="ttc" id="aclassMenuState_html"><div class="ttname"><a href="classMenuState.html">MenuState</a></div><div class="ttdoc">Clase que representa el estado del menú del sistema.</div><div class="ttdef"><b>Definition</b> menu_state.h:27</div></div>
+<div class="ttc" id="aclassMenuState_html_a09a4a054c95734f2de7f5d6081e8cb0d"><div class="ttname"><a href="classMenuState.html#a09a4a054c95734f2de7f5d6081e8cb0d">MenuState::handleSelect</a></div><div class="ttdeci">void handleSelect(Context *context) override</div><div class="ttdoc">Maneja el evento de pulsar el botón de selección.</div></div>
+<div class="ttc" id="aclassMenuState_html_a223dad1767008ab8d83dbfed73649253"><div class="ttname"><a href="classMenuState.html#a223dad1767008ab8d83dbfed73649253">MenuState::MenuState</a></div><div class="ttdeci">MenuState(LiquidCrystal_I2C &amp;lcd)</div><div class="ttdoc">Constructor de la clase MenuState.</div></div>
+<div class="ttc" id="aclassMenuState_html_a2f363f761d59386266e47167c95a2f73"><div class="ttname"><a href="classMenuState.html#a2f363f761d59386266e47167c95a2f73">MenuState::menuItems</a></div><div class="ttdeci">static const char * menuItems[]</div><div class="ttdoc">Elementos del menú.</div><div class="ttdef"><b>Definition</b> menu_state.h:84</div></div>
+<div class="ttc" id="aclassMenuState_html_a3df1108ce455147994a1113aabd54f79"><div class="ttname"><a href="classMenuState.html#a3df1108ce455147994a1113aabd54f79">MenuState::currentIndex</a></div><div class="ttdeci">int currentIndex</div><div class="ttdoc">Índice actual del menú.</div><div class="ttdef"><b>Definition</b> menu_state.h:72</div></div>
+<div class="ttc" id="aclassMenuState_html_a484e45ba5fad0fc509f15c363f443183"><div class="ttname"><a href="classMenuState.html#a484e45ba5fad0fc509f15c363f443183">MenuState::handleBack</a></div><div class="ttdeci">void handleBack(Context *context) override</div><div class="ttdoc">Maneja el evento de pulsar el botón de retroceso.</div></div>
+<div class="ttc" id="aclassMenuState_html_a65a38d7dd6ae0e6346c62cb06e56da07"><div class="ttname"><a href="classMenuState.html#a65a38d7dd6ae0e6346c62cb06e56da07">MenuState::initializeLcd</a></div><div class="ttdeci">void initializeLcd()</div><div class="ttdoc">Inicializa la pantalla LCD.</div></div>
+<div class="ttc" id="aclassMenuState_html_a762ea104392179d78583b92e5c80d95d"><div class="ttname"><a href="classMenuState.html#a762ea104392179d78583b92e5c80d95d">MenuState::menuLength</a></div><div class="ttdeci">static const int menuLength</div><div class="ttdoc">Longitud del menú.</div><div class="ttdef"><b>Definition</b> menu_state.h:85</div></div>
+<div class="ttc" id="aclassMenuState_html_a9dc27d30543f5e7f154d5e18382d2095"><div class="ttname"><a href="classMenuState.html#a9dc27d30543f5e7f154d5e18382d2095">MenuState::lcd</a></div><div class="ttdeci">LiquidCrystal_I2C &amp; lcd</div><div class="ttdoc">Referencia al objeto LiquidCrystal_I2C para el control del LCD.</div><div class="ttdef"><b>Definition</b> menu_state.h:73</div></div>
+<div class="ttc" id="aclassMenuState_html_a9e8b2dce8f9145fcc3e2d53fd41947d8"><div class="ttname"><a href="classMenuState.html#a9e8b2dce8f9145fcc3e2d53fd41947d8">MenuState::handleDown</a></div><div class="ttdeci">void handleDown(Context *context) override</div><div class="ttdoc">Maneja el evento de pulsar el botón hacia abajo.</div></div>
+<div class="ttc" id="aclassMenuState_html_aa7afcf3ffb9eb0a44440f55a8472e9b2"><div class="ttname"><a href="classMenuState.html#aa7afcf3ffb9eb0a44440f55a8472e9b2">MenuState::displayMenu</a></div><div class="ttdeci">void displayMenu(Context *context) override</div><div class="ttdoc">Muestra el menú principal en el LCD.</div></div>
+<div class="ttc" id="aclassMenuState_html_ab20aef5a61c5277aff1cd56351709c0a"><div class="ttname"><a href="classMenuState.html#ab20aef5a61c5277aff1cd56351709c0a">MenuState::handleUp</a></div><div class="ttdeci">void handleUp(Context *context) override</div><div class="ttdoc">Maneja el evento de pulsar el botón hacia arriba.</div></div>
+<div class="ttc" id="aclassMenuState_html_ac6494f1c5373a8293fc7942642b8b1f4"><div class="ttname"><a href="classMenuState.html#ac6494f1c5373a8293fc7942642b8b1f4">MenuState::printLogo</a></div><div class="ttdeci">void printLogo()</div><div class="ttdoc">Imprime el logo en la pantalla LCD.</div></div>
+<div class="ttc" id="aclassState_html"><div class="ttname"><a href="classState.html">State</a></div><div class="ttdoc">Clase base abstracta para los estados de la máquina de estados.</div><div class="ttdef"><b>Definition</b> state.h:28</div></div>
+<div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

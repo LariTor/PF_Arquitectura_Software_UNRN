@@ -1,0 +1,5 @@
+<map id="TestState" name="TestState">
+<area shape="rect" id="Node000001" title="Clase que maneja el estado de prueba en la interfaz." alt="" coords="5,81,87,109"/>
+<area shape="rect" id="Node000002" href="$classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="18,5,74,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,49,49,81,43,81,43,49"/>
+</map>

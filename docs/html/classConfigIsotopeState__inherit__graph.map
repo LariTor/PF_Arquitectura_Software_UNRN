@@ -1,0 +1,5 @@
+<map id="ConfigIsotopeState" name="ConfigIsotopeState">
+<area shape="rect" id="Node000001" title="Clase que maneja el estado de configuración del isótopo en la interfaz." alt="" coords="5,81,150,109"/>
+<area shape="rect" id="Node000002" href="$classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="50,5,105,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,49,80,81,75,81,75,49"/>
+</map>

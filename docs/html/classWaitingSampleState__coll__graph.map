@@ -1,0 +1,5 @@
+<map id="WaitingSampleState" name="WaitingSampleState">
+<area shape="rect" id="Node000001" title="Clase que maneja el estado de espera antes de iniciar el muestreo." alt="" coords="5,81,159,109"/>
+<area shape="rect" id="Node000002" href="$classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="54,5,110,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,49,85,81,79,81,79,49"/>
+</map>

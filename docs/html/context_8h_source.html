@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Final Arquitectura de Software: Archivo de código fuente sketch/context.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logounrn.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Final Arquitectura de Software<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de Visualización y Alerta de Datos Mediante USB</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e80fe89702e8e9e35bb1f7e9386fe61f.html">sketch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">context.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="context_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifndef CONTEXT_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define CONTEXT_H</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;LiquidCrystal_I2C.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span><a class="code hl_class" href="classState.html">State</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classContext.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classContext.html">Context</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classContext.html#adfa96f15b4e800cd32e1adbcb12a7c60">   30</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classContext.html">Context</a> *<a class="code hl_function" href="classContext.html#adfa96f15b4e800cd32e1adbcb12a7c60">getInstance</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classContext.html#a72b7a515821b9b8931d1864f2f2383f3">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#a72b7a515821b9b8931d1864f2f2383f3">setState</a>(<a class="code hl_class" href="classState.html">State</a> *state);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classContext.html#a75a9b3534c6ea0c46885666d0c950c16">   41</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#a75a9b3534c6ea0c46885666d0c950c16">handleUp</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classContext.html#adc2b2e25ba14abb98c52d64ea649e687">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#adc2b2e25ba14abb98c52d64ea649e687">handleDown</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classContext.html#aab1c9e812224d62b9e353c51bec92bbe">   51</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#aab1c9e812224d62b9e353c51bec92bbe">handleSelect</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classContext.html#a930ba1aabb673bdd6672b139650d6517">   56</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#a930ba1aabb673bdd6672b139650d6517">handleBack</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classContext.html#a3f98c2f271202b8ba58af5601a399d30">   62</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#a3f98c2f271202b8ba58af5601a399d30">displayMenu</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classContext.html#af0cfcb048edcc5aba6dfd86499317b41">   68</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#af0cfcb048edcc5aba6dfd86499317b41">setLowerLimit</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="classContext.html#aab4dd3d0268bd4663f9b72660ed46d95">lowerLimit</a>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classContext.html#ad01d374a7264b2059287cad6e958d421">   74</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classContext.html#ad01d374a7264b2059287cad6e958d421">getLowerLimit</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classContext.html#a07d2c6828fb9cf3f7350ec63f5027edb">   80</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#a07d2c6828fb9cf3f7350ec63f5027edb">setUpperLimit</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="classContext.html#ab2745d817eed8b144698527e1aaeb9e7">upperLimit</a>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classContext.html#af2c32a2802b56e1a7588cabf5c2f4b2c">   86</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classContext.html#af2c32a2802b56e1a7588cabf5c2f4b2c">getUpperLimit</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classContext.html#a5bc2734e499da47861c2867446a62610">   92</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classContext.html#a5bc2734e499da47861c2867446a62610">setIsotope</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="classContext.html#a08ec120e370287b37a2beaf86241c333">isotope</a>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classContext.html#a1e3f41016fd05e790e6f2737b6a0f874">   98</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="classContext.html#a1e3f41016fd05e790e6f2737b6a0f874">getIsotope</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classContext.html#a4d4aa5663ec691119786b669d51b47e0">  104</a></span>    LiquidCrystal_I2C &amp;<a class="code hl_function" href="classContext.html#a4d4aa5663ec691119786b669d51b47e0">getLcd</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classContext.html#a652cdcd2eedc8dbd9110bd284c5d5cf0">  107</a></span>    <a class="code hl_function" href="classContext.html#a652cdcd2eedc8dbd9110bd284c5d5cf0">Context</a>();                </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classContext.html#a6864bae3371a8e9f27a7d4e5291ee1b3">  108</a></span>    <a class="code hl_class" href="classState.html">State</a> *<a class="code hl_variable" href="classContext.html#a6864bae3371a8e9f27a7d4e5291ee1b3">currentState</a>;      </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classContext.html#ae9fcb7b0157e6efe357f05c4438d3ed9">  109</a></span>    LiquidCrystal_I2C <a class="code hl_variable" href="classContext.html#ae9fcb7b0157e6efe357f05c4438d3ed9">lcd</a>;    </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classContext.html#a1a6417b83d78418477931ddba09bec5f">  110</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classContext.html">Context</a> *<a class="code hl_variable" href="classContext.html#a1a6417b83d78418477931ddba09bec5f">instance</a>; </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classContext.html#aab4dd3d0268bd4663f9b72660ed46d95">  112</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classContext.html#aab4dd3d0268bd4663f9b72660ed46d95">lowerLimit</a>;      </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classContext.html#ab2745d817eed8b144698527e1aaeb9e7">  113</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classContext.html#ab2745d817eed8b144698527e1aaeb9e7">upperLimit</a>;      </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classContext.html#a08ec120e370287b37a2beaf86241c333">  114</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="classContext.html#a08ec120e370287b37a2beaf86241c333">isotope</a>; </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif </span><span class="comment">// CONTEXT_H</span></div>
+<div class="ttc" id="aclassContext_html"><div class="ttname"><a href="classContext.html">Context</a></div><div class="ttdef"><b>Definition</b> context.h:24</div></div>
+<div class="ttc" id="aclassContext_html_a07d2c6828fb9cf3f7350ec63f5027edb"><div class="ttname"><a href="classContext.html#a07d2c6828fb9cf3f7350ec63f5027edb">Context::setUpperLimit</a></div><div class="ttdeci">void setUpperLimit(int upperLimit)</div><div class="ttdoc">Establece el límite superiordel rango de medicion.</div></div>
+<div class="ttc" id="aclassContext_html_a08ec120e370287b37a2beaf86241c333"><div class="ttname"><a href="classContext.html#a08ec120e370287b37a2beaf86241c333">Context::isotope</a></div><div class="ttdeci">const char * isotope</div><div class="ttdoc">Nombre del isótopo actua.</div><div class="ttdef"><b>Definition</b> context.h:114</div></div>
+<div class="ttc" id="aclassContext_html_a1a6417b83d78418477931ddba09bec5f"><div class="ttname"><a href="classContext.html#a1a6417b83d78418477931ddba09bec5f">Context::instance</a></div><div class="ttdeci">static Context * instance</div><div class="ttdoc">Instancia única del Contexto.</div><div class="ttdef"><b>Definition</b> context.h:110</div></div>
+<div class="ttc" id="aclassContext_html_a1e3f41016fd05e790e6f2737b6a0f874"><div class="ttname"><a href="classContext.html#a1e3f41016fd05e790e6f2737b6a0f874">Context::getIsotope</a></div><div class="ttdeci">const char * getIsotope() const</div><div class="ttdoc">Obtiene el isótopo actual.</div></div>
+<div class="ttc" id="aclassContext_html_a3f98c2f271202b8ba58af5601a399d30"><div class="ttname"><a href="classContext.html#a3f98c2f271202b8ba58af5601a399d30">Context::displayMenu</a></div><div class="ttdeci">void displayMenu()</div><div class="ttdoc">Establece el límite inferior.</div></div>
+<div class="ttc" id="aclassContext_html_a4d4aa5663ec691119786b669d51b47e0"><div class="ttname"><a href="classContext.html#a4d4aa5663ec691119786b669d51b47e0">Context::getLcd</a></div><div class="ttdeci">LiquidCrystal_I2C &amp; getLcd()</div><div class="ttdoc">Obtiene el objeto de la pantalla LCD.</div></div>
+<div class="ttc" id="aclassContext_html_a5bc2734e499da47861c2867446a62610"><div class="ttname"><a href="classContext.html#a5bc2734e499da47861c2867446a62610">Context::setIsotope</a></div><div class="ttdeci">void setIsotope(const char *isotope)</div><div class="ttdoc">Establece el isótopo actual.</div></div>
+<div class="ttc" id="aclassContext_html_a652cdcd2eedc8dbd9110bd284c5d5cf0"><div class="ttname"><a href="classContext.html#a652cdcd2eedc8dbd9110bd284c5d5cf0">Context::Context</a></div><div class="ttdeci">Context()</div><div class="ttdoc">Constructor privado para implementar el patrón Singleton.</div></div>
+<div class="ttc" id="aclassContext_html_a6864bae3371a8e9f27a7d4e5291ee1b3"><div class="ttname"><a href="classContext.html#a6864bae3371a8e9f27a7d4e5291ee1b3">Context::currentState</a></div><div class="ttdeci">State * currentState</div><div class="ttdoc">Puntero al estado actual.</div><div class="ttdef"><b>Definition</b> context.h:108</div></div>
+<div class="ttc" id="aclassContext_html_a72b7a515821b9b8931d1864f2f2383f3"><div class="ttname"><a href="classContext.html#a72b7a515821b9b8931d1864f2f2383f3">Context::setState</a></div><div class="ttdeci">void setState(State *state)</div><div class="ttdoc">Establece el estado actual.</div></div>
+<div class="ttc" id="aclassContext_html_a75a9b3534c6ea0c46885666d0c950c16"><div class="ttname"><a href="classContext.html#a75a9b3534c6ea0c46885666d0c950c16">Context::handleUp</a></div><div class="ttdeci">void handleUp()</div><div class="ttdoc">Maneja la entrada de botón hacia arriba.</div></div>
+<div class="ttc" id="aclassContext_html_a930ba1aabb673bdd6672b139650d6517"><div class="ttname"><a href="classContext.html#a930ba1aabb673bdd6672b139650d6517">Context::handleBack</a></div><div class="ttdeci">void handleBack()</div><div class="ttdoc">Maneja la entrada de botón de retroceso.</div></div>
+<div class="ttc" id="aclassContext_html_aab1c9e812224d62b9e353c51bec92bbe"><div class="ttname"><a href="classContext.html#aab1c9e812224d62b9e353c51bec92bbe">Context::handleSelect</a></div><div class="ttdeci">void handleSelect()</div><div class="ttdoc">Maneja la entrada de selección de botón.</div></div>
+<div class="ttc" id="aclassContext_html_aab4dd3d0268bd4663f9b72660ed46d95"><div class="ttname"><a href="classContext.html#aab4dd3d0268bd4663f9b72660ed46d95">Context::lowerLimit</a></div><div class="ttdeci">int lowerLimit</div><div class="ttdoc">Límite inferior para el rango.</div><div class="ttdef"><b>Definition</b> context.h:112</div></div>
+<div class="ttc" id="aclassContext_html_ab2745d817eed8b144698527e1aaeb9e7"><div class="ttname"><a href="classContext.html#ab2745d817eed8b144698527e1aaeb9e7">Context::upperLimit</a></div><div class="ttdeci">int upperLimit</div><div class="ttdoc">Límite superior para el rango.</div><div class="ttdef"><b>Definition</b> context.h:113</div></div>
+<div class="ttc" id="aclassContext_html_ad01d374a7264b2059287cad6e958d421"><div class="ttname"><a href="classContext.html#ad01d374a7264b2059287cad6e958d421">Context::getLowerLimit</a></div><div class="ttdeci">int getLowerLimit() const</div><div class="ttdoc">Obtiene el límite inferior del rango de medicion..</div></div>
+<div class="ttc" id="aclassContext_html_adc2b2e25ba14abb98c52d64ea649e687"><div class="ttname"><a href="classContext.html#adc2b2e25ba14abb98c52d64ea649e687">Context::handleDown</a></div><div class="ttdeci">void handleDown()</div><div class="ttdoc">Maneja la entrada de botón hacia abajo.</div></div>
+<div class="ttc" id="aclassContext_html_adfa96f15b4e800cd32e1adbcb12a7c60"><div class="ttname"><a href="classContext.html#adfa96f15b4e800cd32e1adbcb12a7c60">Context::getInstance</a></div><div class="ttdeci">static Context * getInstance()</div><div class="ttdoc">Obtiene la instancia única del Contexto.</div></div>
+<div class="ttc" id="aclassContext_html_ae9fcb7b0157e6efe357f05c4438d3ed9"><div class="ttname"><a href="classContext.html#ae9fcb7b0157e6efe357f05c4438d3ed9">Context::lcd</a></div><div class="ttdeci">LiquidCrystal_I2C lcd</div><div class="ttdoc">Objeto para controlar la pantalla LCD.</div><div class="ttdef"><b>Definition</b> context.h:109</div></div>
+<div class="ttc" id="aclassContext_html_af0cfcb048edcc5aba6dfd86499317b41"><div class="ttname"><a href="classContext.html#af0cfcb048edcc5aba6dfd86499317b41">Context::setLowerLimit</a></div><div class="ttdeci">void setLowerLimit(int lowerLimit)</div><div class="ttdoc">Establece el límite inferior del rango de medicion.</div></div>
+<div class="ttc" id="aclassContext_html_af2c32a2802b56e1a7588cabf5c2f4b2c"><div class="ttname"><a href="classContext.html#af2c32a2802b56e1a7588cabf5c2f4b2c">Context::getUpperLimit</a></div><div class="ttdeci">int getUpperLimit() const</div><div class="ttdoc">Obtiene el límite superiordel rango de medicion.</div></div>
+<div class="ttc" id="aclassState_html"><div class="ttname"><a href="classState.html">State</a></div><div class="ttdoc">Clase base abstracta para los estados de la máquina de estados.</div><div class="ttdef"><b>Definition</b> state.h:28</div></div>
+<div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Final Arquitectura de Software: Referencia de la clase State</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logounrn.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Final Arquitectura de Software<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de Visualización y Alerta de Datos Mediante USB</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="classState-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase State<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase base abstracta para los estados de la máquina de estados.  
+ <a href="#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="state_8h_source.html">state.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de herencia de State</div>
+<div class="dyncontent">
+<div class="center"><img src="classState__inherit__graph.png" border="0" usemap="#aState_inherit__map" alt="Inheritance graph"/></div>
+<map name="aState_inherit__map" id="aState_inherit__map">
+<area shape="rect" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="5,213,61,241"/>
+<area shape="rect" href="classConfigIsotopeState.html" title="Clase que maneja el estado de configuración del isótopo en la interfaz." alt="" coords="113,5,258,33"/>
+<area shape="poly" title=" " alt="" coords="36,197,44,162,58,121,78,80,107,44,125,31,128,36,110,48,83,83,63,123,49,164,41,198"/>
+<area shape="rect" href="classConfigRangeState.html" title="Clase que maneja el estado de configuración de los límites en la interfaz." alt="" coords="117,57,254,85"/>
+<area shape="poly" title=" " alt="" coords="42,197,66,146,84,119,107,96,127,83,130,88,110,100,89,122,71,149,46,200"/>
+<area shape="rect" href="classConfigState.html" title="Clase que representa el estado de configuración del sistema." alt="" coords="137,109,234,137"/>
+<area shape="poly" title=" " alt="" coords="52,200,76,173,107,148,135,134,138,139,110,152,80,177,56,203"/>
+<area shape="rect" href="classErrorSampleState.html" title="Clase que representa el estado de error en el muestreo." alt="" coords="118,161,253,189"/>
+<area shape="poly" title=" " alt="" coords="75,210,142,187,144,192,76,215"/>
+<area shape="rect" href="classInitState.html" title="Clase que representa el estado de inicialización del sistema." alt="" coords="147,213,224,241"/>
+<area shape="poly" title=" " alt="" coords="76,224,147,224,147,230,76,230"/>
+<area shape="rect" href="classMenuState.html" title="Clase que representa el estado del menú del sistema." alt="" coords="140,265,231,293"/>
+<area shape="poly" title=" " alt="" coords="76,239,144,262,142,267,75,244"/>
+<area shape="rect" href="classSamplingState.html" title="Clase que maneja el estado de muestreo en la máquina de estados." alt="" coords="127,317,244,345"/>
+<area shape="poly" title=" " alt="" coords="56,251,80,278,110,302,134,314,132,319,107,307,76,282,52,255"/>
+<area shape="rect" href="classTestState.html" title="Clase que maneja el estado de prueba en la interfaz." alt="" coords="145,369,226,397"/>
+<area shape="poly" title=" " alt="" coords="46,255,71,306,89,332,110,354,127,365,145,372,143,377,124,370,107,359,84,335,66,308,42,257"/>
+<area shape="rect" href="classWaitingSampleState.html" title="Clase que maneja el estado de espera antes de iniciar el muestreo." alt="" coords="109,421,262,449"/>
+<area shape="poly" title=" " alt="" coords="41,256,49,291,63,331,83,371,110,407,128,419,125,423,107,410,78,374,58,333,44,292,36,257"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">leyenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a9ddc1df6f998184d6477b48fab90281c" id="r_a9ddc1df6f998184d6477b48fab90281c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ddc1df6f998184d6477b48fab90281c">~State</a> ()</td></tr>
+<tr class="separator:a9ddc1df6f998184d6477b48fab90281c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072e4b1d161e4b00d8b2718c4119b8f7" id="r_a072e4b1d161e4b00d8b2718c4119b8f7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a072e4b1d161e4b00d8b2718c4119b8f7">handleUp</a> (<a class="el" href="classContext.html">Context</a> *context)=0</td></tr>
+<tr class="memdesc:a072e4b1d161e4b00d8b2718c4119b8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja la acción del botón "Up".  <br /></td></tr>
+<tr class="separator:a072e4b1d161e4b00d8b2718c4119b8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3450ac25bea3ad60daf61cf489dd6600" id="r_a3450ac25bea3ad60daf61cf489dd6600"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3450ac25bea3ad60daf61cf489dd6600">handleDown</a> (<a class="el" href="classContext.html">Context</a> *context)=0</td></tr>
+<tr class="memdesc:a3450ac25bea3ad60daf61cf489dd6600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja la acción del botón "Down".  <br /></td></tr>
+<tr class="separator:a3450ac25bea3ad60daf61cf489dd6600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabe0075bb2df4f4f83d0f375fa9d24b" id="r_aaabe0075bb2df4f4f83d0f375fa9d24b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaabe0075bb2df4f4f83d0f375fa9d24b">handleSelect</a> (<a class="el" href="classContext.html">Context</a> *context)=0</td></tr>
+<tr class="memdesc:aaabe0075bb2df4f4f83d0f375fa9d24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja la acción del botón "Select".  <br /></td></tr>
+<tr class="separator:aaabe0075bb2df4f4f83d0f375fa9d24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b2c14ab7512b943a37f65b7ef85317" id="r_a21b2c14ab7512b943a37f65b7ef85317"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21b2c14ab7512b943a37f65b7ef85317">handleBack</a> (<a class="el" href="classContext.html">Context</a> *context)=0</td></tr>
+<tr class="memdesc:a21b2c14ab7512b943a37f65b7ef85317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja la acción del botón "Back".  <br /></td></tr>
+<tr class="separator:a21b2c14ab7512b943a37f65b7ef85317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23b1eefa6c911e3c14477895c072bc7" id="r_ab23b1eefa6c911e3c14477895c072bc7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab23b1eefa6c911e3c14477895c072bc7">displayMenu</a> (<a class="el" href="classContext.html">Context</a> *context)=0</td></tr>
+<tr class="memdesc:ab23b1eefa6c911e3c14477895c072bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menú o la información del estado en el LCD.  <br /></td></tr>
+<tr class="separator:ab23b1eefa6c911e3c14477895c072bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase base abstracta para los estados de la máquina de estados. </p>
+<p>Esta clase define una interfaz común que todos los estados deben implementar. Los métodos virtuales puros aseguran que cada estado concrete sus propias versiones de estos métodos. </p>
+</div><h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="a9ddc1df6f998184d6477b48fab90281c" name="a9ddc1df6f998184d6477b48fab90281c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddc1df6f998184d6477b48fab90281c">&#9670;&#160;</a></span>~State()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual State::~State </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="ab23b1eefa6c911e3c14477895c072bc7" name="ab23b1eefa6c911e3c14477895c072bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23b1eefa6c911e3c14477895c072bc7">&#9670;&#160;</a></span>displayMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void State::displayMenu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Muestra el menú o la información del estado en el LCD. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto actual de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="classConfigIsotopeState.html#a8b58b77db9ecc9cb73e43c31a2cd8d2d">ConfigIsotopeState</a>, <a class="el" href="classConfigRangeState.html#aa20d9c6c9b8469bdeb610edc9f34deac">ConfigRangeState</a>, <a class="el" href="classConfigState.html#a2a1c32fc485a6ded45920e33e4bce0ce">ConfigState</a>, <a class="el" href="classErrorSampleState.html#ab463e018ee1ce513e0b0e65da4905a1e">ErrorSampleState</a>, <a class="el" href="classInitState.html#abfdba900d934d0af0d085cd0ad97cfc6">InitState</a>, <a class="el" href="classMenuState.html#aa7afcf3ffb9eb0a44440f55a8472e9b2">MenuState</a>, <a class="el" href="classSamplingState.html#a2c903899a53ebc9cc58a084972cc9497">SamplingState</a>, <a class="el" href="classTestState.html#a70b976fa2a852381e348b838ac3b7510">TestState</a> y <a class="el" href="classWaitingSampleState.html#a535bb514d8fa2b2798533e922ab02b8c">WaitingSampleState</a>.</p>
+
+</div>
+</div>
+<a id="a21b2c14ab7512b943a37f65b7ef85317" name="a21b2c14ab7512b943a37f65b7ef85317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b2c14ab7512b943a37f65b7ef85317">&#9670;&#160;</a></span>handleBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void State::handleBack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja la acción del botón "Back". </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto actual de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="classConfigIsotopeState.html#aafbaf59214d9906c97000d9e3c583390">ConfigIsotopeState</a>, <a class="el" href="classConfigRangeState.html#aee551cd266ceb42e38c6deeaad386c18">ConfigRangeState</a>, <a class="el" href="classConfigState.html#af12704ac7d24ccc2c2882a71dbdeb5ef">ConfigState</a>, <a class="el" href="classErrorSampleState.html#a291c2aedf85b4ec16fce6bb938a88c08">ErrorSampleState</a>, <a class="el" href="classInitState.html#ac26abf0cb55f01f3758895913e28845f">InitState</a>, <a class="el" href="classMenuState.html#a484e45ba5fad0fc509f15c363f443183">MenuState</a>, <a class="el" href="classSamplingState.html#ab8adcb9e9164b47b024ac883576f7dc4">SamplingState</a>, <a class="el" href="classTestState.html#afe084350e019cc4da2ca8ac1fe037542">TestState</a> y <a class="el" href="classWaitingSampleState.html#abdee7fc148cffc3c1094b1dfa7549d06">WaitingSampleState</a>.</p>
+
+</div>
+</div>
+<a id="a3450ac25bea3ad60daf61cf489dd6600" name="a3450ac25bea3ad60daf61cf489dd6600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3450ac25bea3ad60daf61cf489dd6600">&#9670;&#160;</a></span>handleDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void State::handleDown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja la acción del botón "Down". </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto actual de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="classConfigIsotopeState.html#a6f5870794f7cd41c087af376e562c3d7">ConfigIsotopeState</a>, <a class="el" href="classConfigRangeState.html#a601633cdcb57aa5de4f70bbdb30d3f92">ConfigRangeState</a>, <a class="el" href="classConfigState.html#a3196aceb7e046b055a87b19d9e761b7d">ConfigState</a>, <a class="el" href="classErrorSampleState.html#a2ec4eb0ade04978202ecb87afd186204">ErrorSampleState</a>, <a class="el" href="classInitState.html#a70828fb9b188efaccff28a4f67776a5b">InitState</a>, <a class="el" href="classMenuState.html#a9e8b2dce8f9145fcc3e2d53fd41947d8">MenuState</a>, <a class="el" href="classSamplingState.html#a18ba3462727412949415ac295e762d9d">SamplingState</a>, <a class="el" href="classTestState.html#a5054295e767f168401e1073200aae943">TestState</a> y <a class="el" href="classWaitingSampleState.html#aa5c1dd02b461f4cc5d0491b6d7af4cab">WaitingSampleState</a>.</p>
+
+</div>
+</div>
+<a id="aaabe0075bb2df4f4f83d0f375fa9d24b" name="aaabe0075bb2df4f4f83d0f375fa9d24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabe0075bb2df4f4f83d0f375fa9d24b">&#9670;&#160;</a></span>handleSelect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void State::handleSelect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja la acción del botón "Select". </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto actual de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="classConfigIsotopeState.html#ab750d9e58774fbe2bd6b6f8de9fc19ab">ConfigIsotopeState</a>, <a class="el" href="classConfigRangeState.html#a9fe2d9a8fd54557328ca36e40bcbf494">ConfigRangeState</a>, <a class="el" href="classConfigState.html#afcb1deecb9db1ec9a70d5a86172a583f">ConfigState</a>, <a class="el" href="classErrorSampleState.html#a1902cc4f22dade87d174ee44c82f74fd">ErrorSampleState</a>, <a class="el" href="classInitState.html#a5623546fd792f38a08faa96dbd15a8b9">InitState</a>, <a class="el" href="classMenuState.html#a09a4a054c95734f2de7f5d6081e8cb0d">MenuState</a>, <a class="el" href="classSamplingState.html#ac41e20c8f71d70b88ee47192b1e20847">SamplingState</a>, <a class="el" href="classTestState.html#a7dcc0825da38c3caf264f6037ee6373d">TestState</a> y <a class="el" href="classWaitingSampleState.html#a28b56c2bfad89c627bfb28b4dbcb9eb3">WaitingSampleState</a>.</p>
+
+</div>
+</div>
+<a id="a072e4b1d161e4b00d8b2718c4119b8f7" name="a072e4b1d161e4b00d8b2718c4119b8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072e4b1d161e4b00d8b2718c4119b8f7">&#9670;&#160;</a></span>handleUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void State::handleUp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja la acción del botón "Up". </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto actual de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="classConfigIsotopeState.html#a3e7f47a5b473710b7d947a68d3b779f1">ConfigIsotopeState</a>, <a class="el" href="classConfigRangeState.html#ad381acda70f2cefbd51e98457d482949">ConfigRangeState</a>, <a class="el" href="classConfigState.html#ab6f1b71166fb0705dbc1178d9b9b88f2">ConfigState</a>, <a class="el" href="classErrorSampleState.html#aeff32b75c9f32fa96ce43ab3130aeb8d">ErrorSampleState</a>, <a class="el" href="classInitState.html#ab6fa91922ab8524b5b27f6b9615f4ea1">InitState</a>, <a class="el" href="classMenuState.html#ab20aef5a61c5277aff1cd56351709c0a">MenuState</a>, <a class="el" href="classSamplingState.html#a371188aa79955474cc7609004559906d">SamplingState</a>, <a class="el" href="classTestState.html#a33347579a58369281b328db3c7aa2193">TestState</a> y <a class="el" href="classWaitingSampleState.html#a752b41170e86c5cecd12ad0ec7445f94">WaitingSampleState</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>sketch/<a class="el" href="state_8h_source.html">state.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

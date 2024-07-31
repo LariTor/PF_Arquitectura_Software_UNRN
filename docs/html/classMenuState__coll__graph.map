@@ -1,0 +1,5 @@
+<map id="MenuState" name="MenuState">
+<area shape="rect" id="Node000001" title="Clase que representa el estado del menú del sistema." alt="" coords="5,81,97,109"/>
+<area shape="rect" id="Node000002" href="$classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="23,5,79,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,49,54,81,48,81,48,49"/>
+</map>

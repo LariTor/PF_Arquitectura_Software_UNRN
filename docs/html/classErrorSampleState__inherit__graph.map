@@ -1,0 +1,5 @@
+<map id="ErrorSampleState" name="ErrorSampleState">
+<area shape="rect" id="Node000001" title="Clase que representa el estado de error en el muestreo." alt="" coords="5,81,141,109"/>
+<area shape="rect" id="Node000002" href="$classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="45,5,101,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,49,76,81,70,81,70,49"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="sketch/menu_state.h" name="sketch/menu_state.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase MenuState y sus miembros." alt="" coords="86,5,242,33"/>
+<area shape="rect" id="Node000002" href="$state_8h.html" title=" " alt="" coords="13,81,80,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,36,81,75,78,71,141,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="12,232,158,260"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="162,34,97,218,92,216,157,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="162,81,246,109"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="173,32,192,66,187,69,169,35"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="270,81,333,109"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="190,31,265,71,262,76,187,36"/>
+<area shape="rect" id="Node000003" href="$context_8h.html" title="Definición de la clase Context para la gestión del estado de la aplicación." alt="" coords="5,157,88,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="42,109,40,141,35,141,37,109"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="51,156,53,124,58,124,56,156"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="56,184,74,217,69,220,51,186"/>
+</map>

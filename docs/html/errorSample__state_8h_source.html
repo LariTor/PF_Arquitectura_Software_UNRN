@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Final Arquitectura de Software: Archivo de código fuente sketch/errorSample_state.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logounrn.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Final Arquitectura de Software<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de Visualización y Alerta de Datos Mediante USB</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e80fe89702e8e9e35bb1f7e9386fe61f.html">sketch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">errorSample_state.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="errorSample__state_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef ERRORSAMPLE_STATE_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define ERRORSAMPLE_STATE_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;LiquidCrystal_I2C.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classErrorSampleState.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classErrorSampleState.html">ErrorSampleState</a> : <span class="keyword">public</span> <a class="code hl_class" href="classState.html">State</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#ac54dc3f656a1da01027382536fbfe78b">   32</a></span>    LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classErrorSampleState.html#ac54dc3f656a1da01027382536fbfe78b">lcd</a>; </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#a931c69d2bbc34841d5672fe00d626a0a">   37</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classErrorSampleState.html#a931c69d2bbc34841d5672fe00d626a0a">initializeLcd</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#a18f377dfb3c1538bbf3ce4e4c4654a3a">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classErrorSampleState.html#a18f377dfb3c1538bbf3ce4e4c4654a3a">printLogo</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#ad6c1234ef6a18452aa9e103973b5f03e">   49</a></span>    <a class="code hl_function" href="classErrorSampleState.html#ad6c1234ef6a18452aa9e103973b5f03e">ErrorSampleState</a>(LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classErrorSampleState.html#ac54dc3f656a1da01027382536fbfe78b">lcd</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#aeff32b75c9f32fa96ce43ab3130aeb8d">   55</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classErrorSampleState.html#aeff32b75c9f32fa96ce43ab3130aeb8d">handleUp</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#a2ec4eb0ade04978202ecb87afd186204">   61</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classErrorSampleState.html#a2ec4eb0ade04978202ecb87afd186204">handleDown</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#a1902cc4f22dade87d174ee44c82f74fd">   67</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classErrorSampleState.html#a1902cc4f22dade87d174ee44c82f74fd">handleSelect</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#a291c2aedf85b4ec16fce6bb938a88c08">   73</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classErrorSampleState.html#a291c2aedf85b4ec16fce6bb938a88c08">handleBack</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classErrorSampleState.html#ab463e018ee1ce513e0b0e65da4905a1e">   79</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classErrorSampleState.html#ab463e018ee1ce513e0b0e65da4905a1e">displayMenu</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// ERRORSAMPLE_STATE_H</span></div>
+<div class="ttc" id="aclassContext_html"><div class="ttname"><a href="classContext.html">Context</a></div><div class="ttdef"><b>Definition</b> context.h:24</div></div>
+<div class="ttc" id="aclassErrorSampleState_html"><div class="ttname"><a href="classErrorSampleState.html">ErrorSampleState</a></div><div class="ttdoc">Clase que representa el estado de error en el muestreo.</div><div class="ttdef"><b>Definition</b> errorSample_state.h:30</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_a18f377dfb3c1538bbf3ce4e4c4654a3a"><div class="ttname"><a href="classErrorSampleState.html#a18f377dfb3c1538bbf3ce4e4c4654a3a">ErrorSampleState::printLogo</a></div><div class="ttdeci">void printLogo()</div><div class="ttdoc">Imprime el logotipo en la pantalla LCD.</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_a1902cc4f22dade87d174ee44c82f74fd"><div class="ttname"><a href="classErrorSampleState.html#a1902cc4f22dade87d174ee44c82f74fd">ErrorSampleState::handleSelect</a></div><div class="ttdeci">void handleSelect(Context *context) override</div><div class="ttdoc">Maneja la entrada de selección de botón.</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_a291c2aedf85b4ec16fce6bb938a88c08"><div class="ttname"><a href="classErrorSampleState.html#a291c2aedf85b4ec16fce6bb938a88c08">ErrorSampleState::handleBack</a></div><div class="ttdeci">void handleBack(Context *context) override</div><div class="ttdoc">Maneja la entrada de botón de retroceso.</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_a2ec4eb0ade04978202ecb87afd186204"><div class="ttname"><a href="classErrorSampleState.html#a2ec4eb0ade04978202ecb87afd186204">ErrorSampleState::handleDown</a></div><div class="ttdeci">void handleDown(Context *context) override</div><div class="ttdoc">Maneja la entrada de botón hacia abajo.</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_a931c69d2bbc34841d5672fe00d626a0a"><div class="ttname"><a href="classErrorSampleState.html#a931c69d2bbc34841d5672fe00d626a0a">ErrorSampleState::initializeLcd</a></div><div class="ttdeci">void initializeLcd()</div><div class="ttdoc">Inicializa la pantalla LCD para el estado de error.</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_ab463e018ee1ce513e0b0e65da4905a1e"><div class="ttname"><a href="classErrorSampleState.html#ab463e018ee1ce513e0b0e65da4905a1e">ErrorSampleState::displayMenu</a></div><div class="ttdeci">void displayMenu(Context *context) override</div><div class="ttdoc">Muestra la información del estado de error en la pantalla LCD.</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_ac54dc3f656a1da01027382536fbfe78b"><div class="ttname"><a href="classErrorSampleState.html#ac54dc3f656a1da01027382536fbfe78b">ErrorSampleState::lcd</a></div><div class="ttdeci">LiquidCrystal_I2C &amp; lcd</div><div class="ttdoc">Referencia al objeto LiquidCrystal_I2C</div><div class="ttdef"><b>Definition</b> errorSample_state.h:32</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_ad6c1234ef6a18452aa9e103973b5f03e"><div class="ttname"><a href="classErrorSampleState.html#ad6c1234ef6a18452aa9e103973b5f03e">ErrorSampleState::ErrorSampleState</a></div><div class="ttdeci">ErrorSampleState(LiquidCrystal_I2C &amp;lcd)</div><div class="ttdoc">Constructor de ErrorSampleState.</div></div>
+<div class="ttc" id="aclassErrorSampleState_html_aeff32b75c9f32fa96ce43ab3130aeb8d"><div class="ttname"><a href="classErrorSampleState.html#aeff32b75c9f32fa96ce43ab3130aeb8d">ErrorSampleState::handleUp</a></div><div class="ttdeci">void handleUp(Context *context) override</div><div class="ttdoc">Maneja la entrada de botón hacia arriba.</div></div>
+<div class="ttc" id="aclassState_html"><div class="ttname"><a href="classState.html">State</a></div><div class="ttdoc">Clase base abstracta para los estados de la máquina de estados.</div><div class="ttdef"><b>Definition</b> state.h:28</div></div>
+<div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

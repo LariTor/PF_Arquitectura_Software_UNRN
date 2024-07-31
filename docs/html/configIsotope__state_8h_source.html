@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Final Arquitectura de Software: Archivo de código fuente sketch/configIsotope_state.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logounrn.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Final Arquitectura de Software<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de Visualización y Alerta de Datos Mediante USB</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e80fe89702e8e9e35bb1f7e9386fe61f.html">sketch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">configIsotope_state.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="configIsotope__state_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef CONFIGISOTOPE_STATE_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define CONFIGISOTOPE_STATE_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;LiquidCrystal_I2C.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classConfigIsotopeState.html">ConfigIsotopeState</a> : <span class="keyword">public</span> <a class="code hl_class" href="classState.html">State</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#ab063279da9d7bafd26b5692dff14b7d5">   31</a></span>    LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classConfigIsotopeState.html#ab063279da9d7bafd26b5692dff14b7d5">lcd</a>;         </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#ace97a7487dfbffdd21a60f5b8dcc89a9">   32</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classConfigIsotopeState.html#ace97a7487dfbffdd21a60f5b8dcc89a9">currentIndex</a>;               </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#a566dd57070b5c2c6fb2caf1c34f35589">   33</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="classConfigIsotopeState.html#a566dd57070b5c2c6fb2caf1c34f35589">menuItems</a>[]; </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#ac353b4a7ced9abba421dad814ae4cbda">   34</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classConfigIsotopeState.html#ac353b4a7ced9abba421dad814ae4cbda">menuLength</a>;    </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#ac5d4122bf5c2fbc45ecf9dc7ade9fa86">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classConfigIsotopeState.html#ac5d4122bf5c2fbc45ecf9dc7ade9fa86">initializeLcd</a>(); </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#a147da91b0edd98e49d994197c59769ff">   37</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classConfigIsotopeState.html#a147da91b0edd98e49d994197c59769ff">printLogo</a>();     </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#ae9885ffb4b336a28b67e144d600fffc4">   44</a></span>    <a class="code hl_function" href="classConfigIsotopeState.html#ae9885ffb4b336a28b67e144d600fffc4">ConfigIsotopeState</a>(LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classConfigIsotopeState.html#ab063279da9d7bafd26b5692dff14b7d5">lcd</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#a3e7f47a5b473710b7d947a68d3b779f1">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classConfigIsotopeState.html#a3e7f47a5b473710b7d947a68d3b779f1">handleUp</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;     </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#a6f5870794f7cd41c087af376e562c3d7">   47</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classConfigIsotopeState.html#a6f5870794f7cd41c087af376e562c3d7">handleDown</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;   </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#ab750d9e58774fbe2bd6b6f8de9fc19ab">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classConfigIsotopeState.html#ab750d9e58774fbe2bd6b6f8de9fc19ab">handleSelect</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>; </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#aafbaf59214d9906c97000d9e3c583390">   49</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classConfigIsotopeState.html#aafbaf59214d9906c97000d9e3c583390">handleBack</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;   </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classConfigIsotopeState.html#a8b58b77db9ecc9cb73e43c31a2cd8d2d">   50</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classConfigIsotopeState.html#a8b58b77db9ecc9cb73e43c31a2cd8d2d">displayMenu</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;  </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// CONFIGISOTOPE_STATE_H</span></div>
+<div class="ttc" id="aclassConfigIsotopeState_html"><div class="ttname"><a href="classConfigIsotopeState.html">ConfigIsotopeState</a></div><div class="ttdoc">Clase que maneja el estado de configuración del isótopo en la interfaz.</div><div class="ttdef"><b>Definition</b> configIsotope_state.h:29</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_a147da91b0edd98e49d994197c59769ff"><div class="ttname"><a href="classConfigIsotopeState.html#a147da91b0edd98e49d994197c59769ff">ConfigIsotopeState::printLogo</a></div><div class="ttdeci">void printLogo()</div><div class="ttdoc">Imprime el logo en la pantalla LCD.</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_a3e7f47a5b473710b7d947a68d3b779f1"><div class="ttname"><a href="classConfigIsotopeState.html#a3e7f47a5b473710b7d947a68d3b779f1">ConfigIsotopeState::handleUp</a></div><div class="ttdeci">void handleUp(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Up&quot;.</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_a566dd57070b5c2c6fb2caf1c34f35589"><div class="ttname"><a href="classConfigIsotopeState.html#a566dd57070b5c2c6fb2caf1c34f35589">ConfigIsotopeState::menuItems</a></div><div class="ttdeci">static const char * menuItems[]</div><div class="ttdoc">Elementos del menú para selección de isótopos.</div><div class="ttdef"><b>Definition</b> configIsotope_state.h:33</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_a6f5870794f7cd41c087af376e562c3d7"><div class="ttname"><a href="classConfigIsotopeState.html#a6f5870794f7cd41c087af376e562c3d7">ConfigIsotopeState::handleDown</a></div><div class="ttdeci">void handleDown(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Down&quot;.</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_a8b58b77db9ecc9cb73e43c31a2cd8d2d"><div class="ttname"><a href="classConfigIsotopeState.html#a8b58b77db9ecc9cb73e43c31a2cd8d2d">ConfigIsotopeState::displayMenu</a></div><div class="ttdeci">void displayMenu(Context *context) override</div><div class="ttdoc">Muestra el menú en la pantalla LCD.</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_aafbaf59214d9906c97000d9e3c583390"><div class="ttname"><a href="classConfigIsotopeState.html#aafbaf59214d9906c97000d9e3c583390">ConfigIsotopeState::handleBack</a></div><div class="ttdeci">void handleBack(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Back&quot;.</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_ab063279da9d7bafd26b5692dff14b7d5"><div class="ttname"><a href="classConfigIsotopeState.html#ab063279da9d7bafd26b5692dff14b7d5">ConfigIsotopeState::lcd</a></div><div class="ttdeci">LiquidCrystal_I2C &amp; lcd</div><div class="ttdoc">Referencia al objeto LCD.</div><div class="ttdef"><b>Definition</b> configIsotope_state.h:31</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_ab750d9e58774fbe2bd6b6f8de9fc19ab"><div class="ttname"><a href="classConfigIsotopeState.html#ab750d9e58774fbe2bd6b6f8de9fc19ab">ConfigIsotopeState::handleSelect</a></div><div class="ttdeci">void handleSelect(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Select&quot;.</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_ac353b4a7ced9abba421dad814ae4cbda"><div class="ttname"><a href="classConfigIsotopeState.html#ac353b4a7ced9abba421dad814ae4cbda">ConfigIsotopeState::menuLength</a></div><div class="ttdeci">static const int menuLength</div><div class="ttdoc">Longitud del menú.</div><div class="ttdef"><b>Definition</b> configIsotope_state.h:34</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_ac5d4122bf5c2fbc45ecf9dc7ade9fa86"><div class="ttname"><a href="classConfigIsotopeState.html#ac5d4122bf5c2fbc45ecf9dc7ade9fa86">ConfigIsotopeState::initializeLcd</a></div><div class="ttdeci">void initializeLcd()</div><div class="ttdoc">Inicializa la pantalla LCD.</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_ace97a7487dfbffdd21a60f5b8dcc89a9"><div class="ttname"><a href="classConfigIsotopeState.html#ace97a7487dfbffdd21a60f5b8dcc89a9">ConfigIsotopeState::currentIndex</a></div><div class="ttdeci">int currentIndex</div><div class="ttdoc">Índice del elemento seleccionado en el menú.</div><div class="ttdef"><b>Definition</b> configIsotope_state.h:32</div></div>
+<div class="ttc" id="aclassConfigIsotopeState_html_ae9885ffb4b336a28b67e144d600fffc4"><div class="ttname"><a href="classConfigIsotopeState.html#ae9885ffb4b336a28b67e144d600fffc4">ConfigIsotopeState::ConfigIsotopeState</a></div><div class="ttdeci">ConfigIsotopeState(LiquidCrystal_I2C &amp;lcd)</div><div class="ttdoc">Constructor que inicializa el LCD y el índice del menú.</div></div>
+<div class="ttc" id="aclassContext_html"><div class="ttname"><a href="classContext.html">Context</a></div><div class="ttdef"><b>Definition</b> context.h:24</div></div>
+<div class="ttc" id="aclassState_html"><div class="ttname"><a href="classState.html">State</a></div><div class="ttdoc">Clase base abstracta para los estados de la máquina de estados.</div><div class="ttdef"><b>Definition</b> state.h:28</div></div>
+<div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

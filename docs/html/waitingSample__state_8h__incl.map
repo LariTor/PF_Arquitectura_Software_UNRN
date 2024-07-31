@@ -1,0 +1,15 @@
+<map id="sketch/waitingSample_state.h" name="sketch/waitingSample_state.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="82,5,246,50"/>
+<area shape="rect" id="Node000002" href="$state_8h.html" title=" " alt="" coords="13,98,80,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,53,79,91,76,87,131,48"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="12,249,158,277"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="159,51,97,235,92,234,154,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="162,98,246,126"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="177,49,193,83,188,85,172,52"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="270,98,333,126"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="202,48,268,87,265,92,199,53"/>
+<area shape="rect" id="Node000003" href="$context_8h.html" title="Definición de la clase Context para la gestión del estado de la aplicación." alt="" coords="5,174,88,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="42,126,40,158,35,158,37,126"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="51,173,53,141,58,141,56,173"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="56,201,74,234,69,237,51,203"/>
+</map>

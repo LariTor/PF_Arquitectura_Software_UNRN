@@ -1,0 +1,6 @@
+<map id="Context" name="Context">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,78,126"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="95,103,104,112,96,121,78,123,78,118,94,116,99,112,91,107"/>
+<area shape="rect" id="Node000002" href="$classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="14,5,69,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,48,44,98,39,98,39,48"/>
+</map>

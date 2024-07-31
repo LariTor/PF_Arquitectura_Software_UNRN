@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Final Arquitectura de Software: Referencia de la clase ConfigState</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logounrn.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Final Arquitectura de Software<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de Visualización y Alerta de Datos Mediante USB</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#pri-static-attribs">Atributos estáticos privados</a> &#124;
+<a href="classConfigState-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase ConfigState</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que representa el estado de configuración del sistema.  
+ <a href="#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="config__state_8h_source.html">config_state.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de herencia de ConfigState</div>
+<div class="dyncontent">
+<div class="center"><img src="classConfigState__inherit__graph.png" border="0" usemap="#aConfigState_inherit__map" alt="Inheritance graph"/></div>
+<map name="aConfigState_inherit__map" id="aConfigState_inherit__map">
+<area shape="rect" title="Clase que representa el estado de configuración del sistema." alt="" coords="5,81,102,109"/>
+<area shape="rect" href="classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="26,5,81,33"/>
+<area shape="poly" title=" " alt="" coords="56,49,56,81,51,81,51,49"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">leyenda</a>]</span></center></div>
+<div class="dynheader">
+Diagrama de colaboración de ConfigState:</div>
+<div class="dyncontent">
+<div class="center"><img src="classConfigState__coll__graph.png" border="0" usemap="#aConfigState_coll__map" alt="Collaboration graph"/></div>
+<map name="aConfigState_coll__map" id="aConfigState_coll__map">
+<area shape="rect" title="Clase que representa el estado de configuración del sistema." alt="" coords="5,81,102,109"/>
+<area shape="rect" href="classState.html" title="Clase base abstracta para los estados de la máquina de estados." alt="" coords="26,5,81,33"/>
+<area shape="poly" title=" " alt="" coords="56,49,56,81,51,81,51,49"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">leyenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a355959854364957cf06f2ed67a2ac378" id="r_a355959854364957cf06f2ed67a2ac378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a355959854364957cf06f2ed67a2ac378">ConfigState</a> (LiquidCrystal_I2C &amp;<a class="el" href="#ab0b0cf43a1b6b1c1977907c7493d2b0e">lcd</a>)</td></tr>
+<tr class="memdesc:a355959854364957cf06f2ed67a2ac378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase <a class="el" href="classConfigState.html" title="Clase que representa el estado de configuración del sistema.">ConfigState</a>.  <br /></td></tr>
+<tr class="separator:a355959854364957cf06f2ed67a2ac378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f1b71166fb0705dbc1178d9b9b88f2" id="r_ab6f1b71166fb0705dbc1178d9b9b88f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6f1b71166fb0705dbc1178d9b9b88f2">handleUp</a> (<a class="el" href="classContext.html">Context</a> *context) override</td></tr>
+<tr class="memdesc:ab6f1b71166fb0705dbc1178d9b9b88f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el evento de pulsar el botón hacia arriba.  <br /></td></tr>
+<tr class="separator:ab6f1b71166fb0705dbc1178d9b9b88f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3196aceb7e046b055a87b19d9e761b7d" id="r_a3196aceb7e046b055a87b19d9e761b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3196aceb7e046b055a87b19d9e761b7d">handleDown</a> (<a class="el" href="classContext.html">Context</a> *context) override</td></tr>
+<tr class="memdesc:a3196aceb7e046b055a87b19d9e761b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el evento de pulsar el botón hacia abajo.  <br /></td></tr>
+<tr class="separator:a3196aceb7e046b055a87b19d9e761b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb1deecb9db1ec9a70d5a86172a583f" id="r_afcb1deecb9db1ec9a70d5a86172a583f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcb1deecb9db1ec9a70d5a86172a583f">handleSelect</a> (<a class="el" href="classContext.html">Context</a> *context) override</td></tr>
+<tr class="memdesc:afcb1deecb9db1ec9a70d5a86172a583f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el evento de pulsar el botón de selección.  <br /></td></tr>
+<tr class="separator:afcb1deecb9db1ec9a70d5a86172a583f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12704ac7d24ccc2c2882a71dbdeb5ef" id="r_af12704ac7d24ccc2c2882a71dbdeb5ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af12704ac7d24ccc2c2882a71dbdeb5ef">handleBack</a> (<a class="el" href="classContext.html">Context</a> *context) override</td></tr>
+<tr class="memdesc:af12704ac7d24ccc2c2882a71dbdeb5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el evento de pulsar el botón de retroceso.  <br /></td></tr>
+<tr class="separator:af12704ac7d24ccc2c2882a71dbdeb5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1c32fc485a6ded45920e33e4bce0ce" id="r_a2a1c32fc485a6ded45920e33e4bce0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a1c32fc485a6ded45920e33e4bce0ce">displayMenu</a> (<a class="el" href="classContext.html">Context</a> *context) override</td></tr>
+<tr class="memdesc:a2a1c32fc485a6ded45920e33e4bce0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menú de configuración en el LCD.  <br /></td></tr>
+<tr class="separator:a2a1c32fc485a6ded45920e33e4bce0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classState"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classState')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados de <a class="el" href="classState.html">State</a></td></tr>
+<tr class="memitem:a9ddc1df6f998184d6477b48fab90281c inherit pub_methods_classState" id="r_a9ddc1df6f998184d6477b48fab90281c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classState.html#a9ddc1df6f998184d6477b48fab90281c">~State</a> ()</td></tr>
+<tr class="separator:a9ddc1df6f998184d6477b48fab90281c inherit pub_methods_classState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a9bc3e4ed89a994fc5a9c073e2aed5954" id="r_a9bc3e4ed89a994fc5a9c073e2aed5954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bc3e4ed89a994fc5a9c073e2aed5954">initializeLcd</a> ()</td></tr>
+<tr class="memdesc:a9bc3e4ed89a994fc5a9c073e2aed5954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa las variables y pantalla.  <br /></td></tr>
+<tr class="separator:a9bc3e4ed89a994fc5a9c073e2aed5954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff0c0087fece561515d7ab8fb36cc44" id="r_acff0c0087fece561515d7ab8fb36cc44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acff0c0087fece561515d7ab8fb36cc44">printLogo</a> ()</td></tr>
+<tr class="memdesc:acff0c0087fece561515d7ab8fb36cc44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime el logo en la pantalla LCD.  <br /></td></tr>
+<tr class="separator:acff0c0087fece561515d7ab8fb36cc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:abfa93cef165a0dadd3203f236fb3b862" id="r_abfa93cef165a0dadd3203f236fb3b862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfa93cef165a0dadd3203f236fb3b862">currentIndex</a></td></tr>
+<tr class="memdesc:abfa93cef165a0dadd3203f236fb3b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Índice del ítem de menú actualmente seleccionado.  <br /></td></tr>
+<tr class="separator:abfa93cef165a0dadd3203f236fb3b862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b0cf43a1b6b1c1977907c7493d2b0e" id="r_ab0b0cf43a1b6b1c1977907c7493d2b0e"><td class="memItemLeft" align="right" valign="top">LiquidCrystal_I2C &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0b0cf43a1b6b1c1977907c7493d2b0e">lcd</a></td></tr>
+<tr class="memdesc:ab0b0cf43a1b6b1c1977907c7493d2b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referencia al objeto LiquidCrystal_I2C para el control del LCD.  <br /></td></tr>
+<tr class="separator:ab0b0cf43a1b6b1c1977907c7493d2b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos estáticos privados</h2></td></tr>
+<tr class="memitem:aa8f64596ba39e4f18e48c4a11818c566" id="r_aa8f64596ba39e4f18e48c4a11818c566"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f64596ba39e4f18e48c4a11818c566">menuItems</a> []</td></tr>
+<tr class="memdesc:aa8f64596ba39e4f18e48c4a11818c566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arreglo de cadenas que contiene los ítems del menú de configuración.  <br /></td></tr>
+<tr class="separator:aa8f64596ba39e4f18e48c4a11818c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe801169131c10caf9f7dfd23db0b130" id="r_afe801169131c10caf9f7dfd23db0b130"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe801169131c10caf9f7dfd23db0b130">menuLength</a></td></tr>
+<tr class="memdesc:afe801169131c10caf9f7dfd23db0b130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Longitud del menú de configuración.  <br /></td></tr>
+<tr class="separator:afe801169131c10caf9f7dfd23db0b130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase que representa el estado de configuración del sistema. </p>
+</div><h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="a355959854364957cf06f2ed67a2ac378" name="a355959854364957cf06f2ed67a2ac378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355959854364957cf06f2ed67a2ac378">&#9670;&#160;</a></span>ConfigState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigState::ConfigState </td>
+          <td>(</td>
+          <td class="paramtype">LiquidCrystal_I2C &amp;</td>          <td class="paramname"><span class="paramname"><em>lcd</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor de la clase <a class="el" href="classConfigState.html" title="Clase que representa el estado de configuración del sistema.">ConfigState</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lcd</td><td>Referencia a un objeto LiquidCrystal_I2C para el control del LCD. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="a2a1c32fc485a6ded45920e33e4bce0ce" name="a2a1c32fc485a6ded45920e33e4bce0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1c32fc485a6ded45920e33e4bce0ce">&#9670;&#160;</a></span>displayMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigState::displayMenu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Muestra el menú de configuración en el LCD. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classState.html#ab23b1eefa6c911e3c14477895c072bc7">State</a>.</p>
+
+</div>
+</div>
+<a id="af12704ac7d24ccc2c2882a71dbdeb5ef" name="af12704ac7d24ccc2c2882a71dbdeb5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12704ac7d24ccc2c2882a71dbdeb5ef">&#9670;&#160;</a></span>handleBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigState::handleBack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el evento de pulsar el botón de retroceso. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classState.html#a21b2c14ab7512b943a37f65b7ef85317">State</a>.</p>
+
+</div>
+</div>
+<a id="a3196aceb7e046b055a87b19d9e761b7d" name="a3196aceb7e046b055a87b19d9e761b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3196aceb7e046b055a87b19d9e761b7d">&#9670;&#160;</a></span>handleDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigState::handleDown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el evento de pulsar el botón hacia abajo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classState.html#a3450ac25bea3ad60daf61cf489dd6600">State</a>.</p>
+
+</div>
+</div>
+<a id="afcb1deecb9db1ec9a70d5a86172a583f" name="afcb1deecb9db1ec9a70d5a86172a583f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb1deecb9db1ec9a70d5a86172a583f">&#9670;&#160;</a></span>handleSelect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigState::handleSelect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el evento de pulsar el botón de selección. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classState.html#aaabe0075bb2df4f4f83d0f375fa9d24b">State</a>.</p>
+
+</div>
+</div>
+<a id="ab6f1b71166fb0705dbc1178d9b9b88f2" name="ab6f1b71166fb0705dbc1178d9b9b88f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f1b71166fb0705dbc1178d9b9b88f2">&#9670;&#160;</a></span>handleUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigState::handleUp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classContext.html">Context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el evento de pulsar el botón hacia arriba. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Puntero al contexto de la máquina de estados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classState.html#a072e4b1d161e4b00d8b2718c4119b8f7">State</a>.</p>
+
+</div>
+</div>
+<a id="a9bc3e4ed89a994fc5a9c073e2aed5954" name="a9bc3e4ed89a994fc5a9c073e2aed5954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc3e4ed89a994fc5a9c073e2aed5954">&#9670;&#160;</a></span>initializeLcd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigState::initializeLcd </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inicializa las variables y pantalla. </p>
+
+</div>
+</div>
+<a id="acff0c0087fece561515d7ab8fb36cc44" name="acff0c0087fece561515d7ab8fb36cc44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff0c0087fece561515d7ab8fb36cc44">&#9670;&#160;</a></span>printLogo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigState::printLogo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Imprime el logo en la pantalla LCD. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="abfa93cef165a0dadd3203f236fb3b862" name="abfa93cef165a0dadd3203f236fb3b862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa93cef165a0dadd3203f236fb3b862">&#9670;&#160;</a></span>currentIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigState::currentIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Índice del ítem de menú actualmente seleccionado. </p>
+
+</div>
+</div>
+<a id="ab0b0cf43a1b6b1c1977907c7493d2b0e" name="ab0b0cf43a1b6b1c1977907c7493d2b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b0cf43a1b6b1c1977907c7493d2b0e">&#9670;&#160;</a></span>lcd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LiquidCrystal_I2C&amp; ConfigState::lcd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referencia al objeto LiquidCrystal_I2C para el control del LCD. </p>
+
+</div>
+</div>
+<a id="aa8f64596ba39e4f18e48c4a11818c566" name="aa8f64596ba39e4f18e48c4a11818c566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f64596ba39e4f18e48c4a11818c566">&#9670;&#160;</a></span>menuItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ConfigState::menuItems[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Arreglo de cadenas que contiene los ítems del menú de configuración. </p>
+
+</div>
+</div>
+<a id="afe801169131c10caf9f7dfd23db0b130" name="afe801169131c10caf9f7dfd23db0b130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe801169131c10caf9f7dfd23db0b130">&#9670;&#160;</a></span>menuLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ConfigState::menuLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Longitud del menú de configuración. </p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>sketch/<a class="el" href="config__state_8h_source.html">config_state.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Final Arquitectura de Software: Archivo de código fuente sketch/waitingSample_state.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logounrn.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Final Arquitectura de Software<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de Visualización y Alerta de Datos Mediante USB</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e80fe89702e8e9e35bb1f7e9386fe61f.html">sketch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">waitingSample_state.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="waitingSample__state_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef WAITINGSAMPLE_STATE_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define WAITINGSAMPLE_STATE_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;LiquidCrystal_I2C.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classWaitingSampleState.html">WaitingSampleState</a> : <span class="keyword">public</span> <a class="code hl_class" href="classState.html">State</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#a8f6c067957d461a86f62ed52fb542f31">   31</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classWaitingSampleState.html#a8f6c067957d461a86f62ed52fb542f31">currentIndex</a>;       </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#ac6a1263598613b413fed7adf9c3a2b4b">   32</a></span>    LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classWaitingSampleState.html#ac6a1263598613b413fed7adf9c3a2b4b">lcd</a>; </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#aa6f9c993fd9893273bb6c38a8fdb733d">   34</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWaitingSampleState.html#aa6f9c993fd9893273bb6c38a8fdb733d">initializeLcd</a>(); </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#a41369af6daa256a19745112ebe17ea8e">   35</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWaitingSampleState.html#a41369af6daa256a19745112ebe17ea8e">printLogo</a>();     </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#af3eb82cb5e43c310d6b758e74a4f2222">   38</a></span>    <a class="code hl_function" href="classWaitingSampleState.html#af3eb82cb5e43c310d6b758e74a4f2222">WaitingSampleState</a>(LiquidCrystal_I2C &amp;<a class="code hl_variable" href="classWaitingSampleState.html#ac6a1263598613b413fed7adf9c3a2b4b">lcd</a>); </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#a752b41170e86c5cecd12ad0ec7445f94">   40</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWaitingSampleState.html#a752b41170e86c5cecd12ad0ec7445f94">handleUp</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;     </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#aa5c1dd02b461f4cc5d0491b6d7af4cab">   41</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWaitingSampleState.html#aa5c1dd02b461f4cc5d0491b6d7af4cab">handleDown</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;   </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#a28b56c2bfad89c627bfb28b4dbcb9eb3">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWaitingSampleState.html#a28b56c2bfad89c627bfb28b4dbcb9eb3">handleSelect</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>; </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#abdee7fc148cffc3c1094b1dfa7549d06">   43</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWaitingSampleState.html#abdee7fc148cffc3c1094b1dfa7549d06">handleBack</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;   </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classWaitingSampleState.html#a535bb514d8fa2b2798533e922ab02b8c">   44</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWaitingSampleState.html#a535bb514d8fa2b2798533e922ab02b8c">displayMenu</a>(<a class="code hl_class" href="classContext.html">Context</a> *context) <span class="keyword">override</span>;  </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">// WAITINGSAMPLE_STATE_H</span></div>
+<div class="ttc" id="aclassContext_html"><div class="ttname"><a href="classContext.html">Context</a></div><div class="ttdef"><b>Definition</b> context.h:24</div></div>
+<div class="ttc" id="aclassState_html"><div class="ttname"><a href="classState.html">State</a></div><div class="ttdoc">Clase base abstracta para los estados de la máquina de estados.</div><div class="ttdef"><b>Definition</b> state.h:28</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html"><div class="ttname"><a href="classWaitingSampleState.html">WaitingSampleState</a></div><div class="ttdoc">Clase que maneja el estado de espera antes de iniciar el muestreo.</div><div class="ttdef"><b>Definition</b> waitingSample_state.h:29</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_a28b56c2bfad89c627bfb28b4dbcb9eb3"><div class="ttname"><a href="classWaitingSampleState.html#a28b56c2bfad89c627bfb28b4dbcb9eb3">WaitingSampleState::handleSelect</a></div><div class="ttdeci">void handleSelect(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Select&quot;.</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_a41369af6daa256a19745112ebe17ea8e"><div class="ttname"><a href="classWaitingSampleState.html#a41369af6daa256a19745112ebe17ea8e">WaitingSampleState::printLogo</a></div><div class="ttdeci">void printLogo()</div><div class="ttdoc">Imprime el logo en la pantalla LCD.</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_a535bb514d8fa2b2798533e922ab02b8c"><div class="ttname"><a href="classWaitingSampleState.html#a535bb514d8fa2b2798533e922ab02b8c">WaitingSampleState::displayMenu</a></div><div class="ttdeci">void displayMenu(Context *context) override</div><div class="ttdoc">Muestra el menú en la pantalla LCD.</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_a752b41170e86c5cecd12ad0ec7445f94"><div class="ttname"><a href="classWaitingSampleState.html#a752b41170e86c5cecd12ad0ec7445f94">WaitingSampleState::handleUp</a></div><div class="ttdeci">void handleUp(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Up&quot;.</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_a8f6c067957d461a86f62ed52fb542f31"><div class="ttname"><a href="classWaitingSampleState.html#a8f6c067957d461a86f62ed52fb542f31">WaitingSampleState::currentIndex</a></div><div class="ttdeci">int currentIndex</div><div class="ttdoc">Índice actual (no utilizado en esta implementación).</div><div class="ttdef"><b>Definition</b> waitingSample_state.h:31</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_aa5c1dd02b461f4cc5d0491b6d7af4cab"><div class="ttname"><a href="classWaitingSampleState.html#aa5c1dd02b461f4cc5d0491b6d7af4cab">WaitingSampleState::handleDown</a></div><div class="ttdeci">void handleDown(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Down&quot;.</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_aa6f9c993fd9893273bb6c38a8fdb733d"><div class="ttname"><a href="classWaitingSampleState.html#aa6f9c993fd9893273bb6c38a8fdb733d">WaitingSampleState::initializeLcd</a></div><div class="ttdeci">void initializeLcd()</div><div class="ttdoc">Inicializa la pantalla LCD.</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_abdee7fc148cffc3c1094b1dfa7549d06"><div class="ttname"><a href="classWaitingSampleState.html#abdee7fc148cffc3c1094b1dfa7549d06">WaitingSampleState::handleBack</a></div><div class="ttdeci">void handleBack(Context *context) override</div><div class="ttdoc">Maneja la acción del botón &quot;Back&quot;.</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_ac6a1263598613b413fed7adf9c3a2b4b"><div class="ttname"><a href="classWaitingSampleState.html#ac6a1263598613b413fed7adf9c3a2b4b">WaitingSampleState::lcd</a></div><div class="ttdeci">LiquidCrystal_I2C &amp; lcd</div><div class="ttdoc">Referencia al objeto LCD.</div><div class="ttdef"><b>Definition</b> waitingSample_state.h:32</div></div>
+<div class="ttc" id="aclassWaitingSampleState_html_af3eb82cb5e43c310d6b758e74a4f2222"><div class="ttname"><a href="classWaitingSampleState.html#af3eb82cb5e43c310d6b758e74a4f2222">WaitingSampleState::WaitingSampleState</a></div><div class="ttdeci">WaitingSampleState(LiquidCrystal_I2C &amp;lcd)</div><div class="ttdoc">Constructor que inicializa el LCD.</div></div>
+<div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
