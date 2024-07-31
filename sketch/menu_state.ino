@@ -52,8 +52,7 @@ void MenuState::handleSelect(Context *context)
         context->setState(new ConfigState(lcd));
         break;
     case 2:
-        // context->setState(new TestState(lcd));
-        context->setState(new InitState(lcd));
+        context->setState(new TestState(lcd));
         break;
     default:
         break;
