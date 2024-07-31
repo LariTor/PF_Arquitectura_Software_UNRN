@@ -20,11 +20,9 @@
 class ErrorSampleState : public State
 {
 private:
-    int currentIndex;
     LiquidCrystal_I2C &lcd;
     void initializeLcd();
     void printLogo();
-    void buzzerFunc();
 
 public:
     ErrorSampleState(LiquidCrystal_I2C &lcd);

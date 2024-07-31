@@ -11,15 +11,13 @@
 
 #include "sampling_state.h"
 #include "errorSample_state.h"
-#include "serialNotConnectedError_decorator.h"
-#include "noDataError_decorator.h"
 #include "waitingSample_state.h"
 #include "menu_state.h"
 #include "context.h"
 #include "pins.h"
 #include "custom_char.h"
 
-SamplingState::SamplingState(LiquidCrystal_I2C &lcd) : lcd(lcd) { Serial.begin(9600); }
+SamplingState::SamplingState(LiquidCrystal_I2C &lcd) : lcd(lcd) {}
 
 void SamplingState::handleUp(Context *context)
 {
@@ -132,77 +130,26 @@ void SamplingState::countNumbersInRange(Context *context)
     int Rsup = context->getUpperLimit();
     int count = 0;
 
-    unsigned long startMillis = millis(); // Guardar el tiempo de inicio
-    unsigned long currentMillis;
-
-    bool serialConnected = Serial; // Verificar si el Serial está conectado
-
-    bool validData = false;
-
-    while (true)
+    // Guardar el tiempo de inicio
+    while (Serial.available() > 0)
     {
-        currentMillis = millis();
-
-        // Verificar si el Serial está conectado
-        if (!serialConnected)
-        {
-            context->setState(new ErrorSampleState(context->getLcd(), new SerialNotConnectedErrorDecorator(nullptr)));
-            break;
-        }
-
-        // Verificar si ha pasado mucho tiempo sin recibir datos
-        if (currentMillis - startMillis > 10000)
-        { // 10 segundos sin recibir datos
-            context->setState(new ErrorSampleState(context->getLcd(), new NoDataErrorDecorator(nullptr)));
-            break;
-        }
-
-        // Verificar si hay datos disponibles en el puerto serie
-        if (Serial.available() > 0)
-        {
-            int value = Serial.parseInt(); // Leer el valor del puerto serie
-
-            // Verificar si los primeros números recibidos son "1111"
-            if (!validData)
-            {
-                if (value == 1111)
-                {
-                    validData = true;
-                    Serial.println("Datos iniciales válidos.");
-                }
-                else
-                {
-                    context->setState(new ErrorSampleState(context->getLcd(), new SerialNotConnectedErrorDecorator(nullptr)));
-                    break;
-                }
-            }
-            else
-            {
-                // Continuar procesando los datos válidos
-                if (value >= Rlow && value <= Rsup)
-                {
-                    count++;
-                    buzzerFunc(value, Rlow, Rsup);
-                    delay(100); // Delay for buzzer tone duration
-                }
-
-                // Actualizar el LCD con el conteo de cuentas
-                lcd.setCursor(7, 2);
-                lcd.print("Cuentas:");
-                lcd.print(count);
-                noTone(buzzer);
-
-                // Reiniciar el temporizador ya que se recibieron datos
-                startMillis = currentMillis;
-            }
-        }
-
-        // Verificar si el botón "Back" fue presionado
         if (digitalRead(button_back) == LOW)
         {
-            Serial.println("Botón BACK presionado. Interrumpiendo medición.");
+            noTone(buzzer);
             handleBack(context); // Cambiar el estado a WaitingSampleState
             return;
         }
+
+        int value = Serial.parseInt();
+        if (value >= Rlow && value <= Rsup)
+        {
+            count++;
+            buzzerFunc(value, Rlow, Rsup);
+            delay(100); // Delay for buzzer tone duration
+        }
+
+        updateLCD(count);
     }
+
+    noTone(buzzer);
 }

@@ -16,7 +16,7 @@
 #include "pins.h"
 #include "custom_char.h"
 
-ErrorSampleState::ErrorSampleState(LiquidCrystal_I2C &lcd, ErrorState *errorState) : lcd(lcd), errorState(errorState) {}
+ErrorSampleState::ErrorSampleState(LiquidCrystal_I2C &lcd) : lcd(lcd) {}
 
 void ErrorSampleState::handleUp(Context *context)
 {
@@ -41,7 +41,32 @@ void ErrorSampleState::displayMenu(Context *context)
 {
     initializeLcd();
     printLogo();
-    errorState->displayError(lcd); // Mostrar mensaje de error específico
+    lcd.setCursor(0, 0);
+    lcd.printByte(0);
+    lcd.print("Muestreo");
+    lcd.setCursor(0, 1);
+    lcd.print("I:");
+    const char *Iso = context->getIsotope();
+    lcd.print(Iso);
+    lcd.setCursor(0, 2);
+    lcd.print("Rs:");
+    int Rsup = context->getUpperLimit();
+    lcd.print(Rsup);
+    lcd.setCursor(0, 3);
+    lcd.print("Ri:");
+    int Rlow = context->getLowerLimit();
+    lcd.print(Rlow);
+    lcd.setCursor(6, 1);
+    lcd.print("|");
+    lcd.setCursor(6, 2);
+    lcd.print("|");
+    lcd.setCursor(6, 3);
+    lcd.print("|");
+    lcd.setCursor(7, 2);
+    lcd.print("Cuentas:XXXX");
+    lcd.setCursor(7, 3);
+    lcd.print("Estado:");
+    lcd.print("ERROR");
 }
 
 void ErrorSampleState::printLogo()

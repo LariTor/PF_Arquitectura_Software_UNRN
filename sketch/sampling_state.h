@@ -26,7 +26,7 @@ private:
     void printLogo();
     void buzzerFunc(int value, int Rlow, int Rup);
     void blinkingWord();
-    void countNumbersInRange(Context *context);
+    void countNumbersInRange(Context *contex);
     void SamplingState::updateLCD(int count);
 
 public:

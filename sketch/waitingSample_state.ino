@@ -29,6 +29,7 @@ void WaitingSampleState::handleDown(Context *context)
 
 void WaitingSampleState::handleSelect(Context *context)
 {
+    Serial.begin(9600);
     context->setState(new SamplingState(lcd)); // Transition to MenuState on SELECT
 }
 
