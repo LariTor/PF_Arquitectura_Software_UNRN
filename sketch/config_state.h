@@ -1,5 +1,5 @@
 /**
- * @file menu_state.h
+ * @file config_state.h
  * @author Lara Torletti (lara.a.torletti@gmail.com)
  * @brief
  * @version 0.1
@@ -9,18 +9,18 @@
  *
  */
 
-#ifndef MENU_STATE_H
-#define MENU_STATE_H
+#ifndef CONFIG_STATE_H
+#define CONFIG_STATE_H
 
 #include "state.h"
 #include <Arduino.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-class MenuState : public State
+class ConfigState : public State
 {
 public:
-    MenuState(LiquidCrystal_I2C &lcd);
+    ConfigState(LiquidCrystal_I2C &lcd);
 
     void handleUp(Context *context) override;
     void handleDown(Context *context) override;
@@ -37,4 +37,4 @@ private:
     static const int menuLength;
 };
 
-#endif // MENU_STATE_H
+#endif // CONFIG_STATE_H

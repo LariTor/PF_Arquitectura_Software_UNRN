@@ -8,17 +8,23 @@
  * @copyright Copyright (c) 2024
  *
  */
+
 #ifndef STATE_H
 #define STATE_H
+
+#include "context.h"
+
+class Context;
 
 class State
 {
 public:
-    virtual void handleUp() = 0;
-    virtual void handleDown() = 0;
-    virtual void handleSelect() = 0;
-    virtual void handleBack() = 0;
-    virtual void display() = 0;
+    virtual ~State() {}
+    virtual void handleUp(Context *context) = 0;
+    virtual void handleDown(Context *context) = 0;
+    virtual void handleSelect(Context *context) = 0;
+    virtual void handleBack(Context *context) = 0;
+    virtual void displayMenu(Context *context) = 0;
 };
 
 #endif // STATE_H

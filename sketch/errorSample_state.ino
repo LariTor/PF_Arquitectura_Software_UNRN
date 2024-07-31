@@ -1,0 +1,70 @@
+/**
+ * @file errorSample_state.ino
+ * @author Lara Torletti (lara.a.torletti@gmail.com)
+ * @brief
+ * @version 0.1
+ * @date 2024-07-29
+ *
+ * @copyright Copyright (c) 2024
+ *
+ */
+
+#include "errorSample_state.h"
+#include "waitingSample_state.h"
+#include "menu_state.h"
+#include "context.h"
+#include "pins.h"
+#include "custom_char.h"
+
+ErrorSampleState::ErrorSampleState(LiquidCrystal_I2C &lcd, ErrorState *errorState) : lcd(lcd), errorState(errorState) {}
+
+void ErrorSampleState::handleUp(Context *context)
+{
+    // No action needed for Up in Sampling state
+}
+
+void ErrorSampleState::handleDown(Context *context)
+{
+    // No action needed for Down in Sampling state
+}
+
+void ErrorSampleState::handleSelect(Context *context)
+{
+}
+
+void ErrorSampleState::handleBack(Context *context)
+{
+    context->setState(new WaitingSampleState(lcd)); // Transition to MenuState on back
+}
+
+void ErrorSampleState::displayMenu(Context *context)
+{
+    initializeLcd();
+    printLogo();
+    errorState->displayError(lcd); // Mostrar mensaje de error específico
+}
+
+void ErrorSampleState::printLogo()
+{
+    lcd.setCursor(18, 0);
+    lcd.printByte(1);
+    lcd.setCursor(19, 0);
+    lcd.printByte(2);
+    lcd.setCursor(18, 1);
+    lcd.printByte(3);
+    lcd.setCursor(19, 1);
+    lcd.printByte(4);
+}
+
+void ErrorSampleState::initializeLcd()
+{
+    lcd.clear();
+    lcd.noBlink();
+    lcd.setCursor(0, 0);
+    lcd.createChar(0, sample_icon);
+    lcd.createChar(1, logo_2x2[0]);
+    lcd.createChar(2, logo_2x2[1]);
+    lcd.createChar(3, logo_2x2[2]);
+    lcd.createChar(4, logo_2x2[3]);
+    lcd.home();
+}

@@ -19,6 +19,8 @@ const int button_back = 7;
 const int led_red = 12;
 const int led_yellow = 13;
 
+const int buzzer = 4;
+
 void initPins()
 {
     pinMode(button_up, INPUT);
@@ -28,4 +30,5 @@ void initPins()
 
     pinMode(led_red, OUTPUT);
     pinMode(led_yellow, OUTPUT);
+    pinMode(buzzer, OUTPUT);
 }
