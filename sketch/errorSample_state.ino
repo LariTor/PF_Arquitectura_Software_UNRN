@@ -1,10 +1,12 @@
 /**
  * @file errorSample_state.ino
  * @author Lara Torletti (lara.a.torletti@gmail.com)
- * @brief
+ * @brief Implementación de la clase `ErrorSampleState`, que representa el estado de error en el muestreo.
  * @version 0.1
- * @date 2024-07-29
- *
+ * @date 2024-07-01
+ * @details La clase `ErrorSampleState` maneja el estado en el que se detecta un error durante
+ *          el muestreo. Hereda de `State` y proporciona métodos para manejar las entradas
+ *          del usuario y actualizar la pantalla LCD en caso de error.
  * @copyright Copyright (c) 2024
  *
  */

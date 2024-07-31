@@ -1,9 +1,9 @@
 /**
  * @file config_state.ino
  * @author Lara Torletti (lara.a.torletti@gmail.com)
- * @brief
+ * @brief  Implementación de la clase ConfigState y sus miembros.
  * @version 0.1
- * @date 2024-07-29
+ * @date 2024-07-1
  *
  * @copyright Copyright (c) 2024
  *
@@ -56,7 +56,7 @@ void ConfigState::handleSelect(Context *context)
 
 void ConfigState::handleBack(Context *context)
 {
-    context->setState(new MenuState(lcd)); // Transition to InitState on back
+    context->setState(new MenuState(lcd));
 }
 
 void ConfigState::displayMenu(Context *context)
@@ -70,7 +70,7 @@ void ConfigState::displayMenu(Context *context)
 
     for (int i = 0; i < menuLength; ++i)
     {
-        lcd.setCursor(0, i + 1); // Adjust for the title row
+        lcd.setCursor(0, i + 1);
         if (i == currentIndex)
         {
             lcd.print("> ");

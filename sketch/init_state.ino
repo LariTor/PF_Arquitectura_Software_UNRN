@@ -3,7 +3,7 @@
  * @author Lara Torletti (lara.a.torletti@gmail.com)
  * @brief
  * @version 0.1
- * @date 2024-07-29
+ * @date 2024-07-01
  *
  * @copyright Copyright (c) 2024
  *
@@ -18,12 +18,12 @@ InitState::InitState(LiquidCrystal_I2C &lcd) : lcd(lcd) {}
 
 void InitState::handleUp(Context *context)
 {
-    // No action needed for Up in Welcome state
+    ///< No action needed
 }
 
 void InitState::handleDown(Context *context)
 {
-    // No action needed for Down in Welcome state
+    ///< No action needed
 }
 
 void InitState::handleSelect(Context *context)
@@ -36,7 +36,7 @@ void InitState::handleSelect(Context *context)
 
 void InitState::handleBack(Context *context)
 {
-    // No action needed for Back in Welcome state
+    ///< No action needed
 }
 
 void InitState::displayMenu(Context *context)

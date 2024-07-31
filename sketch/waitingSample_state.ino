@@ -1,9 +1,9 @@
 /**
  * @file waitingsample_state.ino
  * @author Lara Torletti (lara.a.torletti@gmail.com)
- * @brief
+ * @brief Implementaición de la clase WaitingSampleState para gestionar el estado de espera antes del muestreo.
  * @version 0.1
- * @date 2024-07-29
+ * @date 2024-07-01
  *
  * @copyright Copyright (c) 2024
  *

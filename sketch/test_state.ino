@@ -1,9 +1,9 @@
 /**
  * @file test_state.ino
  * @author Lara Torletti (lara.a.torletti@gmail.com)
- * @brief
+ * @brief Implementación de la clase TestState para gestionar una ventana de prueba en la interfaz.
  * @version 0.1
- * @date 2024-07-29
+ * @date 2024-07-01
  *
  * @copyright Copyright (c) 2024
  *

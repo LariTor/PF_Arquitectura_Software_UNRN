@@ -1,7 +1,7 @@
 /**
  * @file sampling_state.ino
  * @author Lara Torletti (lara.a.torletti@gmail.com)
- * @brief
+ * @brief Implementación de la clase SamplingState para gestionar el estado de muestreo.
  * @version 0.1
  * @date 2024-07-01
  *

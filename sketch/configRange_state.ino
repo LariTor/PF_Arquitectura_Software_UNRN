@@ -1,9 +1,9 @@
 /**
  * @file configRange_state.ino
  * @author Lara Torletti (lara.a.torletti@gmail.com)
- * @brief
+ * @brief  ImplemenraciÑon de la clase ConfigRangeState para la configuración de límites en la interfaz.
  * @version 0.1
- * @date 2024-07-29
+ * @date 2024-07-01
  *
  * @copyright Copyright (c) 2024
  *

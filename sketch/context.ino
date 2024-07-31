@@ -1,9 +1,10 @@
 /**
  * @file context.ino
  * @author Lara Torletti (lara.a.torletti@gmail.com)
- * @brief
+ * @brief Definición de la clase Context para la gestión del estado de la aplicación.
+ *
  * @version 0.1
- * @date 2024-07-29
+ * @date 2024-07-01
  *
  * @copyright Copyright (c) 2024
  *
