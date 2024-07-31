@@ -65,4 +65,6 @@ Este proyecto es el trabajo final integrador de la materia "Arquitectura de Soft
 * [Sobre patrones de diseño implementados](documentation/about_design_pattern.md)
 * [PDF de documentación](documentation/refman.pdf)
 * [Pagina WEB de documentación](https://laritor.github.io/PF_Arquitectura_Software_UNRN/)
+* [Prototipo funcionando](documentation/prototipe_working.md)
+  
 </details>
